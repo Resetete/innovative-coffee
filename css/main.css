@@ -113,10 +113,10 @@ footer {
   width: 100%;
 }
 
-h1 {
-  font-size: 1.3em; /* responsize font size */
+header h1 {
+  font-size: 3em; /* responsize font size */
   margin: 0px;
-  padding: 0px;
+  padding: 10px 0 30px 0;
   font-weight: ;
   color: #AA4EA5;
   font-family: 'K2D', sans-serif;
@@ -132,12 +132,27 @@ h2 {
   font-family: 'K2D', sans-serif;
 }
 
+h3 {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  font-size: 1.1em; /* responsize font size */
+  font-weight: 400;
+  color: black;
+  font-family: 'K2D', sans-serif;
+}
+
 p {
   color: black;
   line-height: 1.5;
   font-weight: 100;
   font-size: 1em; /* responive font size */
   font-family: 'Open Sans', sans-serif;
+  margin:0;
+}
+
+.smaller-p {
+  font-size: 0.7em;
 }
 
 a {
@@ -145,8 +160,13 @@ a {
 }
 
 /*----- TEXT highlighter -------*/
-.highlight-text-bold {
+.primary-text-highlight {
+  color: #AA4EA5;
   font-weight: 600;
+}
+
+.secondary-text-highlight {
+  color: #8A92B8;
 }
 
 /*----- figure settings -------*/
@@ -165,7 +185,6 @@ figure {
   align-items: center;
   justify-content: center;
   width: 90%;
-  padding: 50px 0;
 }
 
 
@@ -179,11 +198,41 @@ figure {
 /* ------- HEADER ----------------------------- */
 /*-----------------------------------------------------*/
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
 
+header .content-wrapper {
+  flex-flow: column;
+  width: 60%;
+}
 
+header .content-wrapper h1, h3, p {
+  text-align: center;
+}
 
+header .content-wrapper figure {
+  width: 20vw;
+  padding: 30px 0 50px 0;
+}
 
+.date-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-color: #E6E626;
+  width: 100%;
+  margin: 20px 0;
+}
 
+.date-highlight h1 {
+  margin: 0;
+  padding: 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -284,7 +333,7 @@ figure {
 
 @media only screen and (min-width: 1200px) {
   /* -------- Desktop styles here   ----------*/
-      
+
 
 }
 
