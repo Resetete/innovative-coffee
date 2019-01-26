@@ -104,8 +104,21 @@ html {
 }
 
 body{
-  background-color: #F6EEF6;
   font-size: 1em;
+}
+
+#page-overlay { /* creates the confetti overlay */
+  position: relative; /* sits on top of the page */
+  height: 100%;
+  width: 100%;
+  background: url('../img/confetti-overlay.png') center center ;
+  background-size: cover;
+  z-index: 999; /* to have it on top of all elements */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F6EEF6; /* page background color */
 }
 
 header,
@@ -227,6 +240,7 @@ header .content-wrapper figure {
   background-color: #E6E626;
   width: 100%;
   margin: 20px 0;
+  z-index: 0;
 }
 
 .date-highlight h1 {
