@@ -1,0 +1,1207 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*----------------- BASE STYLES -------------------*/
+html {
+    font-size: calc(0.7em + 0.8vw); /* setting base font size for ems and make them responsively growing with screen size */
+}
+
+body{
+  background-color: #F2F2F2;
+  font-size: 1em;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.3em; /* responsize font size */
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  color: #EAEFEE;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  font-size: 1.2em; /* responsize font size */
+  font-weight: 600;
+  color: #EAEFEE;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  color: #EAEFEE;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 1em; /* responive font size */
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*----- TEXT highlighter -------*/
+.highlight-text-bold {
+  font-weight: 600;
+}
+
+/*----- figure settings -------*/
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 50px 0;
+}
+
+hr {
+  width: 10%;
+  margin: 20px 0;
+  border: 1px solid #EAEFEE;
+  opacity: 0.4;
+  box-shadow: 1px 1px black;
+}
+
+/*-- button styling --*/
+.btn {
+  /*width: 20vw;*/
+  color: #EAEFEE;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  border-radius: 4px; /* to make round corners */
+  padding: 0.7em 1.3em;
+  margin: 0.5em;
+  width: 45%;
+}
+
+.btn-first-level {
+  background-color: #3FB5AD;
+}
+
+.btn-sec-level {
+  background-color: #B03E56;
+}
+
+.btn-third-level {
+  background-color: #EEA231;
+  text-transform: none;
+}
+
+/*-----------------------------------------------------*/
+/* ------- HEADER ----------------------------- */
+/*-----------------------------------------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 10px;
+  position: sticky; /* to make header fixed (use for desktop and tablet only) */
+  top: 0px; /* required to make the header stick to top */
+  background-color: rgba(242,242,242,0.95); /* background color for the header with transparency*/
+  z-index: 999;
+}
+
+header .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bars { /* includes language selector and nav bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+#logo { /* set size of page logo */
+  width: 30%;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+}
+
+
+/*------- styling langauge selectors -------------*/
+.langauge-selector {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+
+.langauge-selector ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.langauge-selector ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.langauge-selector ul li a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.lang-sel-flag {
+  width: 50%;
+  min-width: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/*----- nav bar styling ---------*/
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*width: 75%;*/
+  padding-left: 10px;
+  flex-flow: row nowrap;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 10px 0 10px 7px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #253449;
+}
+
+/*----------------------------------------*/
+/*--------------HERO IMAGE ---------------*/
+/*----------------------------------------*/
+
+.hero-image {
+  background: url('../img/landingpage-background.jpg') center center no-repeat;
+  background-size: cover;
+  height: 85vh;
+  /*opacity: 0.7;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.hero-image .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  height: 50vh;
+}
+
+.hero-image figure {
+  width: 52%; /* set size of the logo on hero image */
+}
+
+.hero-image h1 {
+  font-weight: 600;
+  text-shadow: 1px 1px black; /* increase readability */
+  margin: 0;
+}
+
+.text-wrapper-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+
+/* styling buttons on hero image  */
+.user-engagement {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.user-engagement button {
+  margin: 0 7vw;
+}
+
+
+/*----------------------------------------*/
+/*------ WELCOMING SECTION ---------------*/
+/*----------------------------------------*/
+
+.welcoming {
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcoming .content-wrapper {
+  padding: 50px 0;
+  flex-flow: row wrap-reverse;
+  position: relative; /* needed to locate the shape #polygon-shape-circle*/
+}
+
+.highlight-text {
+  /*color: #B03E56;*/ /* needed if design default */
+  color: white; /* not needed if design default */
+  padding: 3px 2px; /* not needed if design default */
+  margin-right: 2px; /* not needed if design default */
+  opacity: 0.9; /* not needed if design default */
+  background-color: #B03E56; /* not needed if design default */
+  font-weight: bold;
+}
+
+.welcoming p {
+  color: #253449;
+  padding-right: 40px; /* space between text and portrait */
+}
+
+.welcoming figure {
+  width: 40%;
+}
+
+.welcoming img {
+  background: transparent;
+}
+
+/* shape on about section */
+.shape-wrapper {
+  position: absolute;
+  z-index: 0;
+
+}
+
+#polygon-shape-circle {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  box-shadow: 1.25em 2.5em 0 0 #EEA231;
+  transform: rotate(80deg);
+  position: relative; /* locate the shape */
+  top: 170px;
+  right: 40vw;
+}
+
+#polygon-shape-circle::after {
+  content:"";
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  box-shadow: 0.63em 1.25em 0 0 #EEA231;
+  transform: rotate(180deg);
+  left: 50%;
+  top: 70%;
+  position: absolute; /* locate the shape */
+}
+
+
+/*-------------------------------*/
+/*-------- SERVICES SECTION -----*/
+/*-------------------------------*/
+
+.services-section {
+  background-color: #253449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.services-section h2 {
+  color: #3FB5AD;
+}
+
+
+.services-section .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* text left align */
+  flex-flow: column;
+  z-index: 1;
+}
+
+.services-detail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* lets the background boxes stretch whole container */
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-flow: column;
+  background-color: #F2F2F2;
+  border-radius: 35px; /* makes the background box round corners */
+  margin: 5px;
+  padding: 10px;
+}
+
+.services-item figure {
+  width: 20%; /* scale the icon size */
+  padding: 10px 0;
+}
+
+.services-item p {
+  color: #253449;
+  text-align: left;
+  margin: 0;
+}
+
+.add-spacer { /* adds a padding to end of word */
+  padding-right: 3px;
+}
+
+.text-wrapper-services { /* lets text write next to each other */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------*/
+/*-------- Testemonie Section --------------*/
+/*------------------------------------------*/
+
+.testimonial-section {
+  background-color: #EAEFEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.testimonial-section .content-wrapper {
+  flex-flow: column;
+  position: relative;
+  z-index: 1;
+}
+
+.testemonie-pic {
+  background: transparent;
+  width: 15vw;
+  z-index: 1;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  z-index: 1;
+  /*width: 60vw;*/
+}
+
+.testemonie-text { /* background box with testionial text */
+  background-color: #B03E56;
+  border-radius: 30px;
+  width: 60vw; /*30vw for desktop*/
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #B03E56;
+  border-bottom: 10px solid transparent;
+  margin-left: 10px;
+  z-index:1;
+}
+
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #B03E56;
+  border-bottom: 10px solid transparent;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.font-client {
+  font-weight: 600;
+}
+
+
+
+/*create a costume shape */
+#bd-shape {
+    background: #EEA231;
+    -webkit-clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
+    clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
+    height: 450px;
+    width: 200px;
+    right: -5vw;
+    top: 0px;
+    z-index: -100; /* makes sure that the shape is kept in the background -> the other section should have z-index=1 */
+    float: left; /* needed so that the polygon clipping works */
+    position: absolute; /* needed to adjust the position of the polygon within the container (should be the content-wrapper, there position=relative) */
+  }
+
+
+
+
+
+/*---------------------------------*/
+/*------- About me section --------*/
+/*---------------------------------*/
+
+
+.about-me {
+  background-color: #3FB5AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* needed so that the background polygon from the section before stays in the back */
+  z-index: 1; /* neded to keep the elements on top of the background polygon */
+}
+
+.about-me .content-wrapper {
+  flex-flow: column;
+}
+
+.about-me .content-wrapper h2 {
+  padding-bottom: 20px;
+}
+
+.list-wrapper { /* lets lists appear next to each other for desktop*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.text-wrapper {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 100;
+}
+
+.hard-facts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  /*width: 48%;*/
+}
+
+.hard-facts-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.hard-facts-item figure {
+  mix-blend-mode: darken;
+  width: 15%;
+  margin: 10px;
+}
+
+
+.hard-facts-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.soft-facts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    /*width: 48%;*/
+}
+
+
+.soft-facts-item figure {
+  mix-blend-mode: darken;
+  width: 15%;
+  margin: 10px;
+}
+
+.soft-facts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.soft-facts-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.soft-facts-item button {
+  margin-top: 50px;
+}
+/*------------------------------------------*/
+/*------------ questions section -----------*/
+/*------------------------------------------*/
+
+.questions-sec {
+  background-color: #EAEFEE;
+  background: url('../img/questions-sec-background-mobile.svg') top no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions-sec h2 {
+  padding-bottom: 70px;
+}
+
+.questions-sec .content-wrapper {
+  flex-flow: column;
+}
+
+.questions-sec .content-wrapper h2 {
+  color: #253449;
+  line-height: 1.5;
+}
+
+#send-direct-email a {
+  list-style: none;
+  text-decoration: none;
+  color: #EAEFEE;
+}
+
+
+/*------ FOOTER -----------*/
+footer {
+  background-color: #EEA231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+footer .content-wrapper {
+  flex-flow: column;
+  padding: 25px 0;
+}
+
+footer .content-wrapper a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+footer .footer-container figure {
+  padding-left: 2px;
+  width: 5%;
+}
+
+#chamaeleon-footer-brand {
+  -webkit-filter: grayscale(100%) brightness(220%);
+  filter: grayscale(100%) brightness(220%);
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (orientation: landscape) {
+  /*-------------- Landscape device orientation stlyes ---------*/
+
+  hr { /* puts the objectives on hero image narrower */
+      margin: 0.3em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* -------- tablet styles here   ----------*/
+
+      .btn {
+        width: 25%;
+      }
+
+      hr {
+        margin: 1em 0;
+      }
+
+      .nav-bars {
+        justify-content: flex-end;
+      }
+
+      .hero-image {
+        height: 95vh;
+      }
+
+      .hero-image figure {
+        /*  width: 25vw; /* set size of the logo on hero image */
+          width: 30%; /* set size of the logo on hero image */
+      }
+
+      a {
+        font-size: 1em;
+      }
+
+      header {
+        padding-bottom: 0;
+      }
+
+      header .content-wrapper {
+        flex-flow: row nowrap;
+      }
+
+      #logo { /* set size of page logo */
+        width: 11vw;
+      }
+
+      .header-divider {
+        flex-basis: 20%;
+      }
+
+      header nav ul li a {
+        padding: 20px 0 20px 10px;
+      }
+
+      .lang-sel-flag {
+        width: 2.3vw; /* width in percentage of the screen */
+        /*min-width: 2em; /* size of language flags */
+      }
+
+      /*------ welcoming section -----*/
+
+      .welcoming .content-wrapper {
+        padding: 90px 0;
+        flex-flow: row nowrap;
+      }
+
+      .welcoming figure {
+        width: 60%;
+      }
+
+      #polygon-shape-circle {
+          top: 120px;
+      }
+
+
+      /*------- testionial section ----- */
+
+      /*create a costume shape */
+      #bd-shape {
+          height: 600px;
+          width: 450px;
+        }
+
+      .testemonie-text { /* background box with testionial text */
+          width: 40vw; /*30vw for desktop*/
+        }
+
+      /*------- services section --------*/
+
+
+      .services-item {
+        width: 20vw; /* width of service boxes */
+        padding: 30px 10px;
+      }
+
+      .services-item figure {
+        width: 30%; /* scale the icon size */
+        padding-top: 30px;
+      }
+
+      .services-item p {
+        text-align: left;
+      }
+
+      /*---- testimonial ---*/
+      /* costume shape */
+      #bd-shape {
+        height: 450px;
+        width: 350px;
+        }
+
+      .testemonie-pic {
+        width: 8vw;
+      }
+
+
+
+      #testimonal-button {
+        width: 55%;
+      }
+
+
+      /*--- about me section ---*/
+      .hard-facts {
+        width: 48%;
+      }
+
+      .soft-facts {
+        width: 48%;
+      }
+
+      /*---------Question sec ------*/
+      .questions-sec {
+        background: url('../img/questions-sec-background-desktop.svg') top no-repeat;
+        background-size: cover;
+      }
+
+      /*------- Footer -------*/
+
+      footer .footer-container figure {
+        padding-left: 2px;
+        width: 3%;
+      }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* -------- Desktop styles here   ----------*/
+      hr { /* puts the objectives on hero image narrower */
+          margin: 1em 0;
+      }
+
+      .btn {
+        width: 20%;
+      }
+
+      #testimonal-button {
+        width: 40%;
+      }
+
+      a {
+        font-size: 0.8em;
+      }
+
+      header {
+        padding-bottom: 0;
+      }
+
+      header .content-wrapper {
+        flex-flow: row nowrap;
+      }
+
+      #logo { /* set size of page logo */
+        width: 11vw;
+      }
+
+      .nav-bars {
+        justify-content: flex-end;
+      }
+
+      .header-divider {
+        flex-basis: 20%;
+      }
+
+      header nav ul li a {
+        padding: 20px 0 20px 10px;
+      }
+
+      .lang-sel-flag {
+        width: 2.3vw; /* width in percentage of the screen */
+        /*min-width: 2em; /* size of language flags */
+      }
+
+      /*--- Hero section ------*/
+      .hero-image figure {
+        width: 25%; /* set size of the logo on hero image */
+      }
+
+      .user-engagement button {
+        margin: 0 4vw;
+      }
+
+      /*------ welcoming section -----*/
+
+      .welcoming .content-wrapper {
+        padding: 90px 0;
+        flex-flow: row nowrap;
+      }
+
+      .welcoming figure {
+        width: 60%;
+      }
+
+      /*------- testionial section ----- */
+
+      /*create a costume shape */
+      #bd-shape {
+          height: 500px;
+          width: 450px;
+      }
+
+      .testemonie-text { /* background box with testionial text */
+          width: 40vw;
+      }
+
+      /*------- services section --------*/
+
+
+      .services-item {
+        width: 15vw; /* width of service boxes */
+        padding: 30px 10px;
+      }
+
+      .services-item figure {
+        width: 30%; /* scale the icon size */
+        padding-top: 30px;
+      }
+
+      /*--- about me section ---*/
+      .hard-facts {
+        width: 48%;
+      }
+
+      .soft-facts {
+        width: 48%;
+      }
+
+      /*---------Question sec ------*/
+      .questions-sec {
+        background: url('../img/questions-sec-background-desktop.svg') top no-repeat;
+        background-size: cover;
+      }
+
+      /*------- Footer -------*/
+
+      footer .footer-container figure {
+        padding-left: 2px;
+        width: 3%;
+      }
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
