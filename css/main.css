@@ -111,8 +111,8 @@ body{
   position: relative; /* sits on top of the page */
   height: 100%;
   width: 100%;
-  background: url('../img/confetti-overlay.png') center center ;
-  background-size: cover;
+  background: url('../img/confetti-overlay.png') center center repeat ;
+  background-size: contain;
   z-index: 999; /* to have it on top of all elements */
   top: 0;
   left: 0;
@@ -130,7 +130,7 @@ header h1 {
   font-size: 2em; /* responsize font size */
   margin: 0px;
   padding: 10px 0 30px 0;
-  font-weight: ;
+  font-weight: 600;
   color: #AA4EA5;
   font-family: 'K2D', sans-serif;
 }
@@ -313,6 +313,54 @@ header .content-wrapper figure {
   font-size: 0.8em;
 }
 
+
+/*---------------------------*/
+/*------ Offerings -------------*/
+/*---------------------------*/
+.offerings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerings .content-wrapper {
+    margin: 50px 0;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerings .content-wrapper h3 {
+  color: #AA4EA5;
+  font-weight: 600;
+}
+
+.product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column; /* row nowrap for desktop*/
+}
+
+.product-wrapper figure {
+  width: 30%;
+}
+
+.product-wrapper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 70%;
+  margin: 20px 0;
+}
+
+.product-wrapper-item h3 {
+  text-transform: uppercase;
+  color: #AA4EA5;
+  font-weight: 600;
+  margin: 10px 0 ;
+}
 
 /*---------------------------*/
 /*------ Footer -------------*/
