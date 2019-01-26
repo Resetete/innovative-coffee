@@ -1,1 +1,1 @@
-https://resetete.github.io/ym_services/
+https://resetete.github.io/innovative-coffee/
