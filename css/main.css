@@ -321,9 +321,9 @@ header .content-wrapper figure {
 
 
 
-/*---------------------------*/
+/*------------------------------*/
 /*------ Offerings -------------*/
-/*---------------------------*/
+/*------------------------------*/
 .offerings {
   display: flex;
   justify-content: center;
@@ -367,6 +367,62 @@ header .content-wrapper figure {
   color: #AA4EA5;
   font-weight: 600;
   margin: 10px 0 ;
+}
+
+
+/*---------------------------------------*/
+/*------ Contact Address Section --------*/
+/*---------------------------------------*/
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.sub-categ-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap; /* nowrap for desktop */
+  width: 40%;
+}
+
+.address-item-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.address-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%; /* map height 300 / map width 400 = 0.75*/
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*---------------------------*/
