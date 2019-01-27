@@ -378,6 +378,12 @@ header .content-wrapper figure {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #AA4EA5;
+  color: #E6E626;
+}
+
+.contact-section h2, h3 {
+  color: #E6E626;
 }
 
 .contact-section .content-wrapper {
@@ -385,14 +391,18 @@ header .content-wrapper figure {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  padding: 50px 0;
 }
 
+.address-item p {
+  color: #E6E626;
+}
 .sub-categ-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-flow: row wrap; /* nowrap for desktop */
-  width: 40%;
+  width: 40vw; /* to force both items on a line when there is enough space*/
 }
 
 .address-item-wrapper {
@@ -400,13 +410,23 @@ header .content-wrapper figure {
   align-items: flex-start;
   justify-content: center;
   flex-flow: column;
+  padding: 20px 0;
 }
 
 .address-item {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  text-align: left;
+}
+
+.text-wrapper {
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-flow: column;
+  padding-left: 10px;
 }
 
 .map-container {
@@ -423,6 +443,22 @@ header .content-wrapper figure {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.social-media-wrapper {
+  padding: 20px 0;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  padding-top: 20px;
+}
+
+.social-media-icons figure {
+  width: 5%;
 }
 
 /*---------------------------*/
