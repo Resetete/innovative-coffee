@@ -401,6 +401,7 @@ header .content-wrapper figure {
 .address-item p {
   color: #E6E626;
 }
+
 .sub-categ-wrapper {
   display: flex;
   align-items: center;
@@ -615,18 +616,42 @@ footer p {
 @media only screen and (min-width: 768px) {
   /* -------- tablet styles here   ----------*/
 
-    .call-to-action-form {
+      /*header & call to action section */
+      .call-to-action-form {
         width: 35%; /* general width of the button and input box */
-      }
-
-      .product-wrapper figure {
-        width: 15%;
       }
 
       #subscribe-entry-box {
         width: 93%; /* modify to get the same width as button */
-        box-sizing:  border-box; /* to make the size of the box the same as the submit button "#btn-subscribe"  */
+        box-sizing: border-box; /* to make the size of the box the same as the submit button "#btn-subscribe"  */
       }
+
+      /* Offers section */
+      .product-wrapper figure {
+        width: 15%;
+      }
+
+      /* Contact section */
+
+      .sub-categ-wrapper {
+        justify-content: center;
+        flex-flow: row wrap; /* nowrap for desktop */
+        width: 100%; /* to force both items on a line when there is enough space*/
+      }
+
+      .address-item-wrapper {
+        padding-right: 20px;
+      }
+
+      .map-container {
+        width: 45%;
+      }
+
+      .map-container {
+        padding-bottom: 35%; /* map height 300 / map width 400 = 0.75*/
+      }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -639,6 +664,7 @@ footer p {
           font-size: 0.9em;
         }
 
+        /*-- Header section --*/
         header .content-wrapper figure {
           width: 9vw;
           padding: 30px 0 50px 0;
@@ -657,9 +683,29 @@ footer p {
           box-sizing: border-box; /* to make the size of the box the same as the submit button #subscribe-entry-box  */
         }
 
+        /*--- offers section ---*/
         .product-wrapper figure {
           width: 10%;
         }
+
+        /*--- contact section ---*/
+        .sub-categ-wrapper {
+          justify-content: center;
+          margin: 30px 0 0 0;
+        }
+
+        .address-item-wrapper {
+          padding: 0 20px;
+        }
+
+        .map-container {
+          width: 45%;
+        }
+
+        .map-container {
+          padding-bottom: 35%; /* map height 300 / map width 400 = 0.75*/
+        }
+
 
 }
 
