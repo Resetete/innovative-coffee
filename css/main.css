@@ -268,7 +268,7 @@ header .content-wrapper figure {
   justify-content: center;
   flex-flow: column;
   margin: 20px;
-  width: 57%;
+  width: 57%; /* general width of the button and input box */
 }
 
 #subscribe-entry-box {
@@ -280,7 +280,7 @@ header .content-wrapper figure {
   font-size: 0.8em;
   border: 1px solid #8A92B8;
   background-color: white;
-  width: 91%;
+  width: 91%; /* modify to get the same width as button */
 }
 
 .input-image-wrapper {
@@ -613,7 +613,13 @@ footer p {
 @media only screen and (min-width: 768px) {
   /* -------- tablet styles here   ----------*/
 
+    .call-to-action-form {
+        width: 35%; /* general width of the button and input box */
+      }
 
+      .product-wrapper figure {
+        width: 15%;
+      }
 }
 
 @media only screen and (min-width: 1200px) {
