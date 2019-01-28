@@ -281,6 +281,7 @@ header .content-wrapper figure {
   border: 1px solid #8A92B8;
   background-color: white;
   width: 91%; /* modify to get the same width as button */
+  box-sizing: border-box;
 }
 
 .input-image-wrapper {
@@ -319,6 +320,7 @@ header .content-wrapper figure {
   width: 100%;
   line-height: 1.5;
   text-align: left;
+  box-sizing: border-box;
 }
 
 
@@ -620,11 +622,44 @@ footer p {
       .product-wrapper figure {
         width: 15%;
       }
+
+      #subscribe-entry-box {
+        width: 93%; /* modify to get the same width as button */
+        box-sizing:  border-box; /* to make the size of the box the same as the submit button "#btn-subscribe"  */
+      }
 }
 
 @media only screen and (min-width: 1200px) {
   /* -------- Desktop styles here   ----------*/
+        html {
+            font-size: calc(0.7em + 0.7vw); /* setting base font size for ems and make them responsively growing with screen size */
+        }
 
+        p {
+          font-size: 0.9em;
+        }
+
+        header .content-wrapper figure {
+          width: 9vw;
+          padding: 30px 0 50px 0;
+        }
+
+        .call-to-action-form {
+            width: 22%; /* general width of the button and input box */
+          }
+
+        #subscribe-entry-box {
+          width: 93%; /* modify to get the same width as button */
+          box-sizing:  border-box; /* to make the size of the box the same as the submit button "#btn-subscribe"  */
+        }
+
+        #btn-subscribe {
+          box-sizing: border-box; /* to make the size of the box the same as the submit button #subscribe-entry-box  */
+        }
+
+        .product-wrapper figure {
+          width: 10%;
+        }
 
 }
 
