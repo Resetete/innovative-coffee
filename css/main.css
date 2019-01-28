@@ -141,7 +141,7 @@ h2 {
   margin: 0px;
   font-size: 1.2em; /* responsize font size */
   font-weight: 600;
-  color: #AA4EA5;
+  color: black;
   font-family: 'K2D', sans-serif;
 }
 
@@ -236,7 +236,7 @@ header .content-wrapper figure {
   flex-flow: column;
   background-color: #E6E626;
   width: 100%;
-  margin: 20px 0;
+  margin: 40px 0;
   z-index: 0;
 }
 
@@ -268,7 +268,7 @@ header .content-wrapper figure {
   justify-content: center;
   flex-flow: column;
   margin: 20px;
-  width: 35vh;
+  width: 57%;
 }
 
 #subscribe-entry-box {
@@ -280,7 +280,7 @@ header .content-wrapper figure {
   font-size: 0.8em;
   border: 1px solid #8A92B8;
   background-color: white;
-  width: 94%;
+  width: 91%;
 }
 
 .input-image-wrapper {
@@ -317,6 +317,8 @@ header .content-wrapper figure {
   background-color: #E6E626;
   font-size: 0.8em;
   width: 100%;
+  line-height: 1.5;
+  text-align: left;
 }
 
 
@@ -382,7 +384,7 @@ header .content-wrapper figure {
   color: #E6E626;
 }
 
-.contact-section h2, h3 {
+.third-brand-color {
   color: #E6E626;
 }
 
@@ -402,7 +404,7 @@ header .content-wrapper figure {
   align-items: center;
   justify-content: space-between;
   flex-flow: row wrap; /* nowrap for desktop */
-  width: 40vw; /* to force both items on a line when there is enough space*/
+  width: 70%; /* to force both items on a line when there is enough space*/
 }
 
 .address-item-wrapper {
@@ -419,6 +421,7 @@ header .content-wrapper figure {
   justify-content: flex-start;
   flex-flow: row nowrap;
   text-align: left;
+  padding: 10px 0;
 }
 
 .text-wrapper {
@@ -459,6 +462,7 @@ header .content-wrapper figure {
 
 .social-media-icons figure {
   width: 5%;
+  padding: 0 1px;
 }
 
 /*---------------------------------------*/
@@ -476,6 +480,11 @@ header .content-wrapper figure {
   padding: 50px 0;
   flex-flow: column;
   width: 100%;
+}
+
+.instagram-section .content-wrapper h2 {
+  width: 90%;
+  color: #AA4EA5 ;
 }
 
 .insta-demo-fig {
