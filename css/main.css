@@ -405,9 +405,9 @@ header .content-wrapper figure {
 .sub-categ-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap; /* nowrap for desktop */
-  width: 70%; /* to force both items on a line when there is enough space*/
+  width: 100%; /* to force both items on a line when there is enough space*/
 }
 
 .address-item-wrapper {
@@ -637,6 +637,7 @@ footer p {
         justify-content: center;
         flex-flow: row wrap; /* nowrap for desktop */
         width: 100%; /* to force both items on a line when there is enough space*/
+        padding-top: 30px;
       }
 
       .address-item-wrapper {
