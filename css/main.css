@@ -635,7 +635,7 @@ footer p {
 
       .sub-categ-wrapper {
         justify-content: center;
-        flex-flow: row wrap; /* nowrap for desktop */
+        flex-flow: row nowrap; /* nowrap for tablet and desktop */
         width: 100%; /* to force both items on a line when there is enough space*/
         padding-top: 30px;
       }
@@ -645,13 +645,9 @@ footer p {
       }
 
       .map-container {
-        width: 45%;
-      }
-
-      .map-container {
+        width: 100%;
         padding-bottom: 35%; /* map height 300 / map width 400 = 0.75*/
       }
-
 
 }
 
@@ -693,6 +689,7 @@ footer p {
         .sub-categ-wrapper {
           justify-content: center;
           margin: 30px 0 0 0;
+          flex-flow: row nowrap;
         }
 
         .address-item-wrapper {
@@ -700,11 +697,8 @@ footer p {
         }
 
         .map-container {
-          width: 45%;
-        }
-
-        .map-container {
           padding-bottom: 35%; /* map height 300 / map width 400 = 0.75*/
+          width: 45%;
         }
 
 
