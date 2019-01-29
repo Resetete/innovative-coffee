@@ -314,7 +314,7 @@ header .content-wrapper figure {
 #btn-subscribe {
   padding: 5px 10px;*/
   margin: 0 ;
-  shadow: 1px 1px #8A92B8;
+  shadow: 1px 1px red;
   background-color: #E6E626;
   font-size: 0.8em;
   width: 100%;
